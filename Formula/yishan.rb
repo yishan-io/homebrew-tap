@@ -5,21 +5,21 @@
 class Yishan < Formula
   desc "CLI and local daemon for Yishan"
   homepage "https://github.com/yishan-io/yishan-mono"
-  version "0.14.0"
+  version "0.15.0"
   license "Elastic-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yishan-io/yishan-mono/releases/download/v0.14.0/yishan-cli_0.14.0_darwin_amd64.tar.gz"
-      sha256 "fccc594677b0f8efc652cfae569ee5dfa88aa2e144390009ec60455c1106728b"
+      url "https://github.com/yishan-io/yishan-mono/releases/download/v0.15.0/yishan-cli_0.15.0_darwin_amd64.tar.gz"
+      sha256 "dc5fb9a4ae968772a8e05a937e064dd5f926c08f25ebe796d6316f42d41bc5de"
 
       define_method(:install) do
         bin.install "yishan"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yishan-io/yishan-mono/releases/download/v0.14.0/yishan-cli_0.14.0_darwin_arm64.tar.gz"
-      sha256 "381e8c5fb01313fe37a3bb6cd3a1ac08797c85b1e6ca2dd2111ed6ec195523c9"
+      url "https://github.com/yishan-io/yishan-mono/releases/download/v0.15.0/yishan-cli_0.15.0_darwin_arm64.tar.gz"
+      sha256 "1bf161025c1d7a84b323bcc86a6b635b22326c3e76f4a725eacc9f03088ce415"
 
       define_method(:install) do
         bin.install "yishan"
@@ -29,15 +29,15 @@ class Yishan < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yishan-io/yishan-mono/releases/download/v0.14.0/yishan-cli_0.14.0_linux_amd64.tar.gz"
-      sha256 "9c257ca23604f026bbedadca72a45509196817f12307e5bf44b52cac8c217db4"
+      url "https://github.com/yishan-io/yishan-mono/releases/download/v0.15.0/yishan-cli_0.15.0_linux_amd64.tar.gz"
+      sha256 "2da7242ce3f8748c3aede02bff7775275cec251bd150e13a82a2752bf406d3f9"
       define_method(:install) do
         bin.install "yishan"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yishan-io/yishan-mono/releases/download/v0.14.0/yishan-cli_0.14.0_linux_arm64.tar.gz"
-      sha256 "fad152a632ed3b3d8008b195eab1a655d3dcc648b8bf421bacf6a2bcf11a9808"
+      url "https://github.com/yishan-io/yishan-mono/releases/download/v0.15.0/yishan-cli_0.15.0_linux_arm64.tar.gz"
+      sha256 "3e6eff8c6f281a8045b143a9bd4e7b727c8c6e4fb39d97e3f2065c2a116be851"
       define_method(:install) do
         bin.install "yishan"
       end
