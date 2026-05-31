@@ -11,7 +11,7 @@ class Yishan < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yishan-io/yishan-mono/releases/download/v0.15.0/yishan-cli_0.15.0_darwin_amd64.tar.gz"
-      sha256 "dc5fb9a4ae968772a8e05a937e064dd5f926c08f25ebe796d6316f42d41bc5de"
+      sha256 "2c20b735d4da267f8e72e90baba4fc130cfff5475748d56831ed947ff0015f95"
 
       define_method(:install) do
         bin.install "yishan"
@@ -19,7 +19,7 @@ class Yishan < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yishan-io/yishan-mono/releases/download/v0.15.0/yishan-cli_0.15.0_darwin_arm64.tar.gz"
-      sha256 "1bf161025c1d7a84b323bcc86a6b635b22326c3e76f4a725eacc9f03088ce415"
+      sha256 "5000c1f91cf48aa541c784b4df11322c183576405387904755b5501b4ccfcdf4"
 
       define_method(:install) do
         bin.install "yishan"
@@ -30,14 +30,14 @@ class Yishan < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yishan-io/yishan-mono/releases/download/v0.15.0/yishan-cli_0.15.0_linux_amd64.tar.gz"
-      sha256 "2da7242ce3f8748c3aede02bff7775275cec251bd150e13a82a2752bf406d3f9"
+      sha256 "fdc6c9d68b77b0ef6c602dbc73f58ec317eff4b125998b0b46342c6fdce64852"
       define_method(:install) do
         bin.install "yishan"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yishan-io/yishan-mono/releases/download/v0.15.0/yishan-cli_0.15.0_linux_arm64.tar.gz"
-      sha256 "3e6eff8c6f281a8045b143a9bd4e7b727c8c6e4fb39d97e3f2065c2a116be851"
+      sha256 "a0bd3b9ccb5abd32e6f4ca3098c442431d906e74688feb98cf6cb860a5d4f32a"
       define_method(:install) do
         bin.install "yishan"
       end
